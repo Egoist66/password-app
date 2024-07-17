@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container {
+    max-width: 1390px;
+    padding: 0 20px;
+    margin:  0 auto;
+}
+
+body,html {
+    @apply select-none;
+}
+
+main {
+    @apply py-5;
+    @apply bg-indigo-700;
+    @apply text-white;
+    @apply text-lg;
+}
