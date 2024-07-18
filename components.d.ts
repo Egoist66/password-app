@@ -12,6 +12,7 @@ declare module 'vue' {
     Checkbox: typeof import('primevue/checkbox')['default']
     Editor: typeof import('primevue/editor')['default']
     FloatLabel: typeof import('primevue/floatlabel')['default']
+    Generator: typeof import('./src/components/base/Generator.vue')['default']
     IconField: typeof import('primevue/iconfield')['default']
     InputGroup: typeof import('primevue/inputgroup')['default']
     InputGroupAddon: typeof import('primevue/inputgroupaddon')['default']

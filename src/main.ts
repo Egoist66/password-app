@@ -8,6 +8,7 @@ import { createPinia } from 'pinia'
 import PrimeVue from "primevue/config";
 import Aura from '@primevue/themes/aura';
 import Ripple from 'primevue/ripple';
+import ToastService from 'primevue/toastservice';
 
 
 import App from './App.vue'
@@ -24,9 +25,9 @@ app.use(PrimeVue, {
     ripple: true
 })
 
+app.use(ToastService)
 
 app.directive('ripple', Ripple);
-
 app.use(createPinia())
 app.use(router)
 
