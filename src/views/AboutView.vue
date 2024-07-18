@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :style="{width: '70%', margin: '0 auto'}">
     <h1 class="text-3xl font-bold mb-5">About</h1>
 
     <div class="p-5 bg-white shadow-md rounded-lg">

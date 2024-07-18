@@ -30,7 +30,7 @@ const passMessage = () => {
 </script>
 
 <template>
-  <Card :style="{ width: '700px' }">
+  <Card :style="{ width: '50%', margin: '0 auto' }">
     <template #title>
       <h2 class="text-center uppercase mb-5 text-gray-500">Password generator</h2>
     </template>
@@ -60,8 +60,8 @@ const passMessage = () => {
       <div class="password-settings">
         <label class="block mb-2" for="password-length">Password Settings:</label>
 
-        <InputGroup class="justify-between items-center mb-10">
-          <div class="flex flex-col flex-wrap gap-3">
+        <InputGroup class="justify-between flex-wrap items-center mb-10">
+          <div class="flex flex-col col-custom flex-wrap gap-3">
             <div class="option flex items-center justify-between gap-2">
               <label for="lowercase">Lowercase (a-z)</label>
               <Checkbox
@@ -84,7 +84,7 @@ const passMessage = () => {
             </div>
           </div>
 
-          <div class="flex flex-col flex-wrap gap-3">
+          <div class="flex col-custom flex-col flex-wrap gap-3">
             <div class="option flex justify-between items-center gap-2">
               <label for="numbers">Numbers (0-9)</label>
               <Checkbox
@@ -96,7 +96,7 @@ const passMessage = () => {
               />
             </div>
 
-            <div class="option flex justify-between items-center gap-2">
+            <div class="option col-custom flex justify-between items-center gap-2">
               <label for="symbols">Symbols (~!@#)</label>
               <Checkbox
                 title="Include Symbols ( ~!@#)"
@@ -143,5 +143,11 @@ const passMessage = () => {
     background-color: v-bind("stylePasswordIndicator()");
     border-radius: 20px;
   }
+}
+
+@media(max-width: 700px){
+    .col-custom{
+        width: 100% !important;
+    }
 }
 </style>

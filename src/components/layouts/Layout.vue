@@ -5,7 +5,7 @@
 
 <template>
     <div id="layout">
-         <header class="py-3 shadow-lg sticky top-0 bg-gray-800">
+         <header class="py-3 z-50 shadow-lg sticky top-0 bg-gray-800">
             <div class="container">
                 <slot name="header"/>
             </div>
@@ -33,7 +33,7 @@
 
 
 <style lang="scss" scoped>
- .main-container {
+    .main-container {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -41,5 +41,9 @@
 
     
     
- }
+    }
+
+    section {
+        width: 100%;
+    }
 </style>
